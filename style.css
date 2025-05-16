@@ -1,0 +1,387 @@
+@font-face {
+    font-family: SF6font;
+    src: url(CityBrawlersBoldCaps.otf) format('opentype');
+  }  
+
+body {
+    font-family: 'SF6font' , sans-serif; /*Custom font for the website*/
+    margin: 0px;
+    height: 100%;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+
+/*Landing page*/
+
+.nav-bar {          /*creates the orange gradient nav bar on top*/
+    height: 185px;
+    background: linear-gradient(rgb(183, 90, 19), rgb(0, 0, 0,0));
+    position: absolute;
+    width: 100%;
+    z-index: 1; /*Keeps the bar on top*/
+  }
+
+.main-title { /*adjusting title text */
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #f6f6f6;
+    position: absolute;
+    top: 20px;
+    left: 58px;
+    font-size: 116px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #f6f6f6;  
+}
+
+.pages { /*moves link to the top right*/
+    top: 77px;
+    left: 1200px;
+    position: absolute;
+    font-size: 54px;
+    word-spacing: 50px;
+}
+
+.pages .char:hover {      /*hover effect on nav bar links*/
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.pages .news:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.pages .cont:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.pages .buy:hover {
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+/*main cover and button*/
+.cover img {
+    width: 100%;
+    position: relative;
+    bottom: 50%;
+}
+
+.play {
+    text-decoration: none;
+    width: 244px;
+    top: 814px;
+    left: 815px;
+    font-size: 52px;
+    position: absolute;
+    color: #f6f6f6; 
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(rgb(131, 19, 183), rgb(80, 13, 111,0.7));
+}
+
+.play:hover { /*hover effect for button*/
+    cursor: pointer;
+    background-image: linear-gradient(rgb(161, 22, 225), rgb(77, 17, 104,0.8));
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.finallinks{  /*effects for footer*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #383838;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.legal{
+    padding: 10px;
+}
+
+/*Character page*/
+
+.roster{  /*grid for roster images*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 300px;
+}
+
+.roster img {
+    width: 550px;
+    height: auto;
+    border: rgb(191, 191, 239) solid 2px;
+    filter: grayscale(100);
+}
+.roster img:hover {     /*over effect for roster images*/
+    cursor: pointer;
+    border: none;
+    scale: 1.08;
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.roster p {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    font-size: 58px;
+    text-shadow: 1px 1px 3px black;
+}
+
+/*indivisual character background effects on hover*/
+.ryu:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(169,49,27), rgb(0, 0, 0,0));
+}
+
+.zangief:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(255,255,152), rgb(229, 194, 194));
+}
+
+.manon:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right,rgb(237,225,244) , rgb(183,242,239));
+}
+
+.luke:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(0,93,217), rgb(210, 172, 0));
+}
+
+.ken:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(131,30,3), rgb(255,124,21));
+}
+
+.jamie:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(249,218,61), rgb(74,3,0));
+}
+
+.chunli:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(0,35,112), rgb(182,207,248));
+}
+
+.guile:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(0,112,152),rgb(57,103,39));
+}   
+
+.gouki:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(67,60,59), rgb(138,20,9));
+}
+
+.deejay:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(196,28,13), rgb(80,130,34));
+}
+
+.cammy:hover {
+    width: auto;
+    height: 306px;
+    background: linear-gradient(to right, rgb(131, 27, 31), rgb(0,64,156));
+}
+
+/*News page*/
+
+.allnews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.allnews .topnews{ /*places the main news on top*/
+    position: relative;
+    margin-bottom: 140px;
+    margin-top: 230px;
+}
+
+.allnews .topnews img {
+    width: auto;
+    height: 500px;
+}
+
+.allnews .topnews p {
+    position: absolute;
+    font-size: 65px;
+    top: 425px;
+    left: 240px;
+}
+
+.allnews .newsgrid { /*creates a grid for the other news images*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    width: 1690px;
+}
+
+.allnews .newsgrid img{
+    width: auto;
+    height: 300px;
+}
+
+.allnews .newsgrid p{
+    bottom: 20px;
+}
+
+
+.allnews .newsgrid .news1 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews .newsgrid .news2 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews .newsgrid .news3 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews .newsgrid .news4 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews .newsgrid .news5 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews .newsgrid .news6 p{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+}
+
+.allnews img{ /*cursor becomes a pointer when you over over the inage*/
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+.allnews img:hover{ /*brightness increases when you hover*/
+    filter: brightness(100%);
+    transition: 0.4s;
+    box-shadow: 0 0 20px 5px rgb(225, 100, 22);
+}
+
+/*Contact page*/
+
+.contactpage {
+    position: relative;
+    padding: 30px;
+    width: 1500px;
+    left: 100px;
+    top: 100px;
+}
+
+.faqtitle{
+    font-size: 90px;
+    
+}
+
+.faq3{
+    border: rgb(161, 161, 161) solid 1px;
+    padding: 20px;
+}
+
+.question{
+    font-size: 40px;
+}
+
+.answer{
+    font-size: 35px;
+}
+
+.contactbox{
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    font-size: 40px;
+}
+
+.cform{ /*contact form button*/
+    border: #ffffff solid 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cform:hover{
+    background-color: #434343;
+    transition: 0.3s;
+}
+
+.contfoot{
+    width: 100vw;
+}
+
+/*Screenshots page*/
+
+.screenshots{ 
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+.screenshots h2{
+    margin-top: 200px;
+}
+
+.scrgrid{ /*grid system for ingame screenshots*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.scrgrid img{
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.scrgrid img:hover{ /*increases brightness when you hover over images*/
+    filter: brightness(100%);
+    transition: 0.5s;
+}
